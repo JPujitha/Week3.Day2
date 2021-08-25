@@ -14,12 +14,15 @@ public class MissingElementInAnArray {
 		int min=arr[0];
 		for (int i = 0; i < arr.length; i++)
 		{
-			if(arr[i]!=min+i)
+			missing.add(arr[i]);
+		
+			if(!missing.contains(min+i))
 			{
 				System.out.println("Missing value in Array is : "+(min+i));
 				break;
 			}
 		}
 	}
-
 }
+
+
